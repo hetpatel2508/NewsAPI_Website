@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #main_nav_container {
+    /* background-color: #212121; */
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    margin-top: 15px;
+  }
+  
+  #main_nav_left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding-left: 10px; */
+  }
+  
+  #nav_logo {
+    cursor:pointer;
+    display: inline;
+    margin: 5.7px 10px 0 0px;
+    height: 50px;
+    min-width: 170px;
+    /* background-color: black; */
+    background-image: url("Images/3520301-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #nav_text_main {
+    /* background-color: gray; */
+    height: 100%;
+    min-width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-right: 615px; */
+  }
+  
+  .nav_text:hover{
+    /* transition: all; */
+    transition-property: all;
+    transition-duration: 0.17351s;
+    transition-timing-function: ease;
+    transform: scale(1.125);
+    color: blue;
+  }
+  
+  .nav_text:active{
+    color: red;
+    transform: scale(1);
+  }
+
+
+  .nav_text {
+    /* color: white; */
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    cursor:pointer;
+    font-weight: bold;
+    font-size: large;
+  }
+  
+  #search_bar {
+    /* background-color: #4f4545; */
+    height: 35px;
+    min-width: 260px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50px;
+    /* margin-left: px; */
+  }
+  
+  #bar {
+    border-style:none;
+    margin-top: 1px;
+    margin-left: 1px;
+    border-radius: 50px;
+    width: 200px;
+    height: 30px;
+    padding-left: 15px;
+    padding-top: 2px;
+    /* margin-top: 5px; */
+    /* text-align: right; */
+  }
+  
+  #search_icon {
+    cursor: pointer;
+    width: 27px;
+    height: 27px;
+    /* background-color: black; */
+    margin-left: 11px;
+    margin-top: 3px;
+    margin-right: 8px;
+    /* border-radius: 50px; */
+    background-image: url("Images/loupe.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  #Like_icon {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    margin-left: 11px;
+    margin-top: 12px;
+    display: inline-block;
+  }
+
+  #dark_mode{
+    width: 60px;
+    height: 35.0px;
+    /* background-color: black; */
+    margin-top: 10.5px;
+    margin-left: 11px;
+    margin-right: 11px;
+    background-image: url("Images/Screenshot\ \(19\).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  #Profile_icon {
+    cursor: pointer;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    margin-left: 11px;
+    margin-right: 8px;
+    margin-top: 12px;
+  }
+  
+  #main_nav_right {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #title{
+    text-align: center;
+    text-decoration: underline;
+    font-size: larger;
+  }
+
+  #main_content_box{
+    display: grid;
+    grid-template-columns: 21vw 21vw 21vw 21vw;
+    grid-auto-rows: 58.7vh;
+    column-gap:3.64vw;
+    row-gap: 6vh;
+  }
+
+  .box{
+    /* background-color: aquamarine; */
+    width: 100%;
+    margin-left: 1.8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5vh;
+    border-style:solid;
+    border-radius: 5%;
+  }
+  
+  .box:hover{
+    box-shadow: 4px 4px 8px #919191;
+    background-color: #f9fdff;
+    transform: translateY(-4px);
+  }
+
+  .b_image{
+    /* background-color: bisque; */
+    width: 95%;
+    height: 23vh;
+    margin-top: 1vh;
+    border-radius: 5%;
+    /* border-top-right-radius: 10%;
+    border-bottom-left-radius: 5%; */
+    /* background-image: url("adiyogi shiva.jpg"); */
+    background-repeat: no-repeat;
+    /* background-size:contain; */
+    background-size:cover;
+    background-position: center;
+  }
+  
+  .b_desc{
+    /* background-color:aqua; */
+    width: 90%;
+    /* opacity: 10%; */
+    height: 8.65vh;
+    overflow:hidden;
+    font-size:large;
+    padding-left: 0.51vw;
+    margin-top: 1vh;
+  }
+  
+  .b_author{
+    /* background-color:blueviolet; */
+    width: 90%;
+    height: 2.8vh;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.4vw;
+    font-size: small;
+    opacity: 60%;
+    padding-left: 0.51vw;
+    margin-top: 1vh;
+  }
+  
+  .b_content{
+    margin-top: 1vh;
+    /* background-color:rgb(178, 240, 224); */
+    width: 90%;
+    opacity: 86%;
+    height: 13vh;
+    padding-left: 0.51vw;
+    padding-bottom: 0.941vw;
+    /* opacity: 90%; */
+    font-size:medium;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
