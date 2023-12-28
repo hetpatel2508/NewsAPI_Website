@@ -126,7 +126,7 @@ function bindData(articles){
     });
 } 
 
-let t=0;
+let t=0; //for switching images
 let d_mod = document.getElementById("dark_mode");
 d_mod.addEventListener("click",()=>{
     if(t%2==0){
