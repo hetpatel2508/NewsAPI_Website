@@ -25,9 +25,10 @@
   #nav_logo {
     cursor:pointer;
     display: inline;
-    margin: 5.7px 10px 0 0px;
+    margin: 5.7px 10px 0 10px;
     height: 50px;
-    min-width: 170px;
+    min-width: 150px;
+    border-radius: 5%;
     /* background-color: black; */
     background-image: url("Images/3520301-removebg-preview.png");
     background-repeat: no-repeat;
@@ -121,16 +122,16 @@
   }
 
   #dark_mode{
-    width: 60px;
-    height: 35.0px;
+    width: 80px;
+    height: 55px;
     /* background-color: black; */
-    margin-top: 10.5px;
+    /* margin-top: 5px; */
     margin-left: 11px;
     margin-right: 11px;
     background-image: url("Images/Screenshot\ \(19\).png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
   }
   
   #Profile_icon {
@@ -179,6 +180,7 @@
     box-shadow: 4px 4px 8px #919191;
     background-color: #f9fdff;
     transform: translateY(-4px);
+    color: black;
   }
 
   .b_image{

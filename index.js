@@ -130,11 +130,21 @@ let t=0; //for switching images
 let d_mod = document.getElementById("dark_mode");
 d_mod.addEventListener("click",()=>{
     if(t%2==0){
-    d_mod.style.backgroundImage= `url("Images/Screenshot\ \(20\).png")`;
+    d_mod.style.backgroundImage= `url("Images/d_night.png")`;
     t++;
+    document.body.style.backgroundColor="#161b22";
+    d_mod.style.backgroundColor="#161b22";
+    document.body.style.color="white";
+    document.getElementById("nav_logo").style.backgroundColor="white";
+    document.getElementById("search_icon").style.backgroundImage=`url("Images/s_night.png")`;
+    
 }
 else{
-        d_mod.style.backgroundImage= `url("Images/Screenshot\ \(19\).png")`;
-        t++;
+    d_mod.style.backgroundImage= `url("Images/d_light.png")`;
+    t++;
+    document.body.style.backgroundColor="white";
+    d_mod.style.backgroundColor="white";
+    document.body.style.color="black";
+    document.getElementById("search_icon").style.backgroundImage=`url("Images/s_light.png")`;
     }
 })
